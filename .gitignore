@@ -1,1 +1,4 @@
 /dist
+.gitignore
+.jshint
+node_modules
