@@ -113,9 +113,11 @@ header
     &:hover
         background: #1631B6
         transition: background 0.5s ease-in-out
+    svg
+        margin-left: 10px
 
 .our-possibilities
-    min-height: 1090px
+    min-height: 1020px
     background:  #FAFAFA
     padding-top: 240px
     h2
@@ -150,6 +152,7 @@ header
             font-size: 14px
             line-height: 1 em
 .result
+    margin-top: 100px
     .row
         margin-bottom: 95px
         .result-text
@@ -192,8 +195,8 @@ header
         position: relative
         img
             position: absolute
-            top: -230px
-            left: -190px
+            top: -200px
+            right: 0
     .info-panel
         font-family: "Rubik", sans-serif
         color: #fff
@@ -215,7 +218,13 @@ header
         display: flex
         flex-wrap: wrap
         justify-content: space-between
-        widows: 33%
+        align-items: baseline
+        img
+            width: 28%
+            margin-bottom: 20px
+            &:nth-child(-n+3)
+                align-self: flex-start
+                
     h3
         font-size: 42px
         font-weight: 700
