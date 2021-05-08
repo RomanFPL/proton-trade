@@ -26,18 +26,20 @@
     //     overflow: hidden
     header
         .wrap-menu-logo
-            .habburger-menu
+            .hamburger-menu
                 display: block
             .active
-                margin-top: 10px
+                // margin-top: 10px
                 span
+                    margin-top: 10px
                     margin-bottom: -2.5px
+                    transition: all 0.5s ease-in-out
                     &:nth-child(1)
                         transform: rotate(-45deg)
                     &:nth-child(2)
-                        display: none
+                        width: 0
                     &:nth-child(3)
-                        transform: rotate(45deg)
+                        transform: rotate(45deg)  translate(-14px, -14px)
                         
         .wrap-menu
             display: none
@@ -45,6 +47,7 @@
         height: 100vh
         width: 100vw
         overflow: hidden
+        transition: all 1s easy-in-out
         nav
             height: 100vh
             .logo
@@ -132,6 +135,9 @@
                 .count-users
                     justify-content: center
                     width: 100%
+    .our-possibilities
+        margin-top: 550px
+
     .robot
         .telephone-bg
             img
