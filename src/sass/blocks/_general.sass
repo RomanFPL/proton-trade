@@ -1,3 +1,5 @@
+body
+    overflow-x: hidden
 header
     background: #fff
     box-shadow: 0 2px 34px rgba(208, 208, 208, 0.4)
@@ -15,6 +17,19 @@ header
             img 
                 height: 100%
                 display: block
+    .habburger-menu
+        display: none
+        position: absolute
+        right: 15px
+        height: 26px
+        width: max-content
+        z-index: 1000
+        span
+            display: block
+            width: 34px
+            height: 3px
+            background: #000
+            margin-bottom: 8px
 
     
 .wrap-menu
@@ -35,13 +50,13 @@ header
                 &:hover
                     color: #3355FF
 .promo
-    min-height: 804px
+    min-height: 750px
     background: url("../img/bg/first.png") center center/cover no-repeat
     background-size: 100%
     padding: 250px 0  0
     .intro 
         font-family: Rubik, sans-serif
-        height: 275px
+        min-height: 275px
         .wrap-intro-text
             margin-bottom: 62px
         h2
@@ -57,6 +72,7 @@ header
             font-weight: 300
         .try-panel
             display: flex
+            flex-wrap: wrap
             .count-users
                 width: 50%
                 display: flex
@@ -153,6 +169,12 @@ header
             line-height: 1 em
 .result
     margin-top: 100px
+    h2
+        font-family: Rubik, sans-serif
+        font-weight: 700
+        font-size: 42px
+        top: 0
+        left: 0
     .row
         margin-bottom: 95px
         .result-text
@@ -160,13 +182,6 @@ header
             display: flex
             align-items: center
             position: relative
-            h2
-                font-family: Rubik, sans-serif
-                font-weight: 700
-                font-size: 42px
-                position: absolute
-                top: 0
-                left: 0
             h3
                 font-size: 24px
                 font-weight: 700
@@ -310,7 +325,8 @@ footer
         height: 88px
         display: flex
         justify-content: space-between
-        align-items: center  
+        align-items: center 
+        flex-wrap: wrap
         p
             color: #fff
             margin: 0        
