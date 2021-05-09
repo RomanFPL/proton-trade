@@ -33,8 +33,6 @@ menu.forEach(link => {
         link.addEventListener('click', () => linkOnMenu(hamburgerMenu));
 });
 
-console.dir(window);
-
 window.addEventListener('scroll', () => {
     if(window.pageYOffset>1500 && 
         footer.offsetTop<(window.pageYOffset + window.innerHeight)){
